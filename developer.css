@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #c3d5f1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0;
+    width: auto;
+    padding: 20px 10px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #0151aa;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #0151aa;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #0151aa;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+section {
+    flex: 1;
+    padding-top: 120px; /* Adjust padding to ensure content does not overlap with the header */
+    text-align: center;
+}
+
+.container, .container-two {
+    width: 300px;
+    height: 160px;
+    border: 2px solid #0151aa;
+    background-color: transparent;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.container i, .container-two i {
+    margin-top: 15px;
+    font-size: 32px;
+    color: #0151aa;
+}
+
+.container h3, .container-two h3 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: #0151aa;
+}
+
+.container p, .container-two p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: #0151aa;
+}
+
+
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    gap: 20px;
+}
+
+.text-kenalan {
+    text-align: start;
+    color: #0151aa;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center; /* Optional: center the text */
+}
+
+.crop-image {
+    width: 400px;
+    height: 400px;
+    display: block;
+    border-radius: 20px;
+    /* Optional: Center the image within its container */
+    object-fit: cover;
+}
+
+.text-kenalan p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    color: #0151aa;
+    margin-bottom: 40px;
+}
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: #ffffff;
+    padding: 60px 10%;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+}
+
+.footer-col h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #265d9a;
+    text-transform: capitalize;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #27c0ac;
+    height: 2px;
+    width: 40px;
+}
+
+ul li:not(:last-child){
+    margin-bottom: 8px;
+}
+
+ul li a{
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: #265d9a;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+ul li a:hover{
+    color: #5b8fca;
+    padding-left: 2px;
+}
+
+.links a{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: rgba(40, 130, 214, 0.8);
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+/* Add the following to your existing CSS */
+
+

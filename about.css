@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0;
+    width: auto;
+    padding: 20px 10px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #0151aa;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #0151aa;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #0151aa;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.sect1 {
+    background-color: #c3d5f1;
+}
+
+.sect2 {
+    background-color: #e6ecfb;
+}
+
+.sect3 {
+    background-color: #c3d5f1;
+}
+
+.sect4 {
+    background-color: #e6ecfb;
+}
+
+
+.sect1 img {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 412px;
+    height: 412px;
+}
+
+.sect2 img {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 412px;
+    height: 412px;
+}
+
+.sect3 img {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 412px;
+    height: 412px;
+}
+
+.sect4 img {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 412px;
+    height: 412px;
+}
+
+.text-kenalan {
+    text-align: start;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 50px;
+    color: #265d9a;
+    top: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-kenalan h1{
+    margin-bottom: 5px;
+    font-size: 86px;
+    font-weight: 800;
+}
+
+
+.text-kenalan h2{
+    margin-bottom: 5px;
+
+}
+
+
+.text-kenalan p {
+    font-size: 16px;
+    line-height: 30px;
+   
+}
+
+.text-kenalan2 {
+    text-align: right;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 50px;
+    color: #265d9a;
+    top: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-kenalan2 h1{
+    margin-bottom: 5px;
+    font-size: 86px;
+    font-weight: 800;
+}
+
+
+.text-kenalan2 h2{
+    margin-bottom: 5px;
+
+}
+
+
+.text-kenalan2 p {
+    font-size: 16px;
+    line-height: 30px;
+   
+}
+
+.text-kenalan3 {
+    text-align: right;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 50px;
+    color: #265d9a;
+    top: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-kenalan3 h1{
+    margin-bottom: 5px;
+    font-size: 86px;
+    font-weight: 800;
+}
+
+
+.text-kenalan3 h2{
+    margin-bottom: 5px;
+
+}
+
+
+.text-kenalan3 p {
+    font-size: 16px;
+    line-height: 30px;
+   
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: #ffffff;
+    padding: 60px 10%;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+}
+
+.footer-col h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #265d9a;
+    text-transform: capitalize;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #27c0ac;
+    height: 2px;
+    width: 40px;
+}
+
+ul li:not(:last-child){
+    margin-bottom: 8px;
+}
+
+ul li a{
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: #265d9a;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+ul li a:hover{
+    color: #5b8fca;
+    padding-left: 2px;
+}
+
+.links a{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: rgba(40, 130, 214, 0.8);
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
